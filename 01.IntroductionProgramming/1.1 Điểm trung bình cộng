@@ -1,0 +1,7 @@
+Begin
+input a, b ,c 
+// a , b, c tương ứng với điểm số của 3 môn bất kì
+D= (a+b+c)/3
+Display D
+End
+ 

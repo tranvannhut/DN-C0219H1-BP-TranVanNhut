@@ -1,0 +1,11 @@
+  B.1.  BEGIN a(i)=MAx
+  INPUT N VÀ DÃY SỐ  a(i)
+//N là số lượng các số tự nhiên trong dãy SỐ
+B.2
+WHILE (a(i)>MAX)
+DO DISPLAY (a(i) là giá trị  lớn nhất)
+           i=i+1
+END DO
+END
+
+ 
