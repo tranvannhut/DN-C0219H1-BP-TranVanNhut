@@ -1,0 +1,45 @@
+
+<html>
+    <head>
+        <tittle>nhuttran</tittle>
+    </head>
+    <body>
+        <form >
+            <fieldset>
+                <legend>Thong tin ca nhan</legend>
+                 <input type = "text" name= "username"  required /> <br />
+                 <input type = "password" name= "password" /> <br />
+                 <input type = "text" name = "email" placeholder = "email@gmail.com" /> <br />
+                 <h2> Năm sinh : </h2>
+                 <input id="years" type ="text"  /> 
+                 <input  type ="button" value ="year" onclick="yearsofbirth()" />
+                 <h3> Gender : </h3>
+                 <input type = "checkbox" name = "gender"  value ="male" > Male </input >  <br />
+                 <input type = "checkbox" name = "gender"  value ="female" /> FeMale <br />
+                 <h4> Status Materital :</h4>
+                 <input type = "radio"    name = "material" value = "single" /> Single <br />
+                 <input type = "radio"    name = "material" value = "married" /> Married <br />
+                 <input type = "radio"    name = "material" value = "divorce" /> Divorce <br />
+                 <h6> Address </h6>
+                 <select value ="address">
+                     <option value = "Quang Nam"  > Quảng Nam </option>
+                     <option value = "Quang Ngai"  > Quảng Ngãi </option>
+                     <option value = "Quang Tri"  > Quảng Trị </option>
+                     <option value = "Đà Nẵng"  > Đà Nẵng </option>
+                 </select>
+                </fieldset>
+                 <script>
+                     function yearsofbirth(){
+                     var year =document.getElementById("years").value ;
+                         if (year >= "2000") {
+                             document.write("you are very too young to get married and concentrate on your learning!");
+                         }else if (year >= "1990"){ 
+                             document.write("i think you should focus on working and looking for a girlfriend!");
+                          } else {
+                             document.write("get married!kkk ...")
+                         }
+                         }
+                 </script>
+        </form>
+    </body>
+</html>

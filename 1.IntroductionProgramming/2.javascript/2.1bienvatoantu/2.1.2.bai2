@@ -1,0 +1,5 @@
+ var C;
+ var F=(9C+125)/5;
+ document.write("Độ C : " + C);
+ document.write("<br />");
+ document.write("độ F :c"+ F);

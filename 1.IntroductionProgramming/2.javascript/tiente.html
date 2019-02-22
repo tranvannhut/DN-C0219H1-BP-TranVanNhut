@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<tittle> Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+<input  id="demo" type="text">Amount <br />
+
+<select id= "from-currency">
+<option value ="VND" >VND</option>
+<option value ="USD" >USD</option>
+</select>
+<select id="to-currency">
+<option value="VND">VND</option>
+<option value="USD">USD</option>
+</select>
+<button type="button" onclick="exchange()";>convert</button>
+<script>
+    function exchange() {
+        var from =document.getElementById("from-currency").value;
+        var to =document.getElementById("to-currency").value;
+        var amount = document.getElementById("demo").value;
+        console.log(from,to,amount);
+        if(from == "VND" && to == "USD"){
+            var a = amount/23000;
+            document.write("result: " + a )
+        }else if(from == "USD" && to == "VND"){
+            var  b = 23000*amount;
+            document.write("result: " + b);
+        }else {
+        document.write("result: " + 1);
+         }
+
+    }
+    </script>
+
+</form>
+
+</body>

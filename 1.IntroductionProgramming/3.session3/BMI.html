@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <h1 name="can nang" > Cân nặng của bạn </h1>
+        <input name = "can nang"  type = "text" id="weight" /> 
+        <h2> Chiều cao của bạn </h2>
+        <input name = "chieu cao" type = "text" id="height" />
+        <input type = "button" onclick="result()" value = "click"  />
+        <script>
+            function result(){
+                var weight =document.getElementById("weight").value ;
+                var height =document.getElementById("height").value ;
+                var bmi = weight / ( height * height) ;
+                  if ( bmi < 18) {
+                      document.write ("underweight");
+                   } else if ( bmi < 25.5 ){
+                        document.write ("Normal");
+                        }else if ( bmi < 30) {
+                            document.write("Overweight");
+                        }else {
+                            document.write("Obese")
+                        }
+                    }
+    
+        </script>
+    </body>
+</html>

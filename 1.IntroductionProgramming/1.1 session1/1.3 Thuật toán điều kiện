@@ -1,0 +1,17 @@
+BEGIN
+INPUT a,b,c
+a=Max
+ if ( a > b && a > c)
+   then print("a là giá  trị lớn nhất")
+   if (a < b  || a < c)
+     else  if ( b < c)
+       print ("c là giá trị lớn nhất ")
+      else  
+        print ("b là giá trị lớn nhất ")
+
+ else end
+end
+
+
+
+

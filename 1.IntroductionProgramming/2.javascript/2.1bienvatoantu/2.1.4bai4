@@ -1,0 +1,5 @@
+var r;
+var C=r*2*3.14;
+document.write("bán kinh r"+r);
+document.write("<br />);
+document.write("Chu vi của hình tròn là : "+ C);

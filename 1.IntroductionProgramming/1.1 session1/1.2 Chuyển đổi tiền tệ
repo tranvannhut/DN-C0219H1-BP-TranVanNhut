@@ -1,0 +1,6 @@
+Begin 
+Input amout ; 
+USD = amout / 23000 ;
+Display ("USD = " + USD)
+End
+

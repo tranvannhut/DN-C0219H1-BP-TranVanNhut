@@ -1,0 +1,6 @@
+var r;
+var S=r*r*3.14
+document.write("bán kính r :"+r );
+document.write("<br / >);
+document.write("Diện tích hình tròn : " +S);
+document.write("<br / >);
