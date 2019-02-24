@@ -1,0 +1,28 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <input   id = "demo" type = "text" placeholder = "Please enter your name"   />
+        <input id="demo2" type = "button"  onclick = "yourname()" value = "enter" />
+        <script> 
+            
+            function yourname(){
+              var nhapTen = document.getElementById("demo").value ;
+                 if (nhapTen == "admin"){
+                     var pass = prompt(document.getElementById("demo2").value);
+                         if (pass == "The Master"){
+                              alert("Welcome");
+                         }else if (pass == null){
+                              alert("canceled");
+                         } else {
+                            alert("wrong password");
+                         }
+                   }else if (nhapTen == null){
+                    alert("Canceled");
+                  }else{
+                    alert("I don't know you") ;
+                   }
+            }
+        </script> 
+    </body>
+</html>

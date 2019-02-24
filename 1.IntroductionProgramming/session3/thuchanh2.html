@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <tittle>nhut tran </tittle>
+    </head>
+    <body>
+        <form>
+            <img src="https://i.ebayimg.com/images/g/oUkAAOxydlFSrG6k/s-l300.jpg"  id = "image"  style ="width : 100px" />
+            <p> Click button bellow to move this image to right </p>
+            <input type = "button" value = "click me" onclick ="moveRight" />
+            <script>
+                      var imgObj = null ;
+                          imgObj =document.getElementById("image").value ;
+                     function init(){
+                          imgObj =document.getElementById("image").value ;
+                          imgObj.style.position = "relative" ;
+                          imgObj.style.left = "0px" ;
+                       }
+                       function moveRight(){
+                        imgObj.style.left = parseInt(imgObj.style.left) + 10 + "px" ;
+                      }
+                window.onload = init ;
+            </script>
+
+        </form>
+
+    </body>
+</html>

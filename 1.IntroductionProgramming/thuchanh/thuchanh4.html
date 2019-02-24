@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <input type = "text" id = "demo" />
+        <input type = "text" id = "demo1" />
+        <input type = "submit" value = "result" onclick = "compare()" />
+        <script>
+            function compare(){
+             var a =Number(document.getElementById("demo").value) ;
+             var b =Number(document.getElementById("demo1").value) ;
+              var result = a + b
+                  if (result < 4){
+                     alert("below");
+                  }else{
+                    alert("over");
+                   }
+                   }
+             </script>
+    </body>
+</html>
