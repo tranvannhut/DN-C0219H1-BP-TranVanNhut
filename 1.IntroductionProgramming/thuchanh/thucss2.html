@@ -1,0 +1,52 @@
+<html>
+
+<body>
+
+
+           
+            Amount :
+            <input type="text" placeholder="enter a number" id="demo" /><br />
+            From :
+            <select id="demo1">
+                <option >USD</option>
+                <option >VND</option>
+            </select>
+            <br /> To :
+            <select id="demo2">
+                <option>USD</option>
+                <option>VND</option>
+            </select>
+            <input type="submit" onclick="click()" value="convert" />
+
+
+        <script>
+            // let a , b, c ;
+            // let y = document.getElementById("demo1").value;
+            // let z = document.getElementById("demo2").value;
+            function click() {
+                let x = parseInt(document.getElementById("demo").value);
+                 let y =document.getElementById("demo1").value ;
+                 let z =document.getElementById("demo2").value ;
+                if (y == "USD" && z == "VND") {
+                  let a = x * 23000;
+                    alert(a);
+                } else if (y == "VND" && z == "USD") {
+                  let b = x / 23000;
+                   alert(b);
+                } else {
+                   let c = 1;
+                   alert(c);
+                }
+            }
+           
+
+
+
+
+
+
+        </script>
+    </form>
+</body>
+
+</html>

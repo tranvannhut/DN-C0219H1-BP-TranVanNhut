@@ -1,0 +1,30 @@
+<html>
+
+<body>
+    <form>
+
+    <input type="text" id="textvalue" />
+    <input type="button" id="demo" onclick="addElement()" value="Add" />
+    <input type="button" id="demo1" onclick="displayArray()" value= "Display" />
+    <div id = "result"></div>
+    </form>
+    <script>
+var array = [] ;
+var x = 0 ;
+        function addElement() {
+            array[x] = document.getElementById("textvalue").value ;
+            alert("Element : " + array[x]  +  " added in array  " +  x);
+            x++
+            document.getElementById("textvalue").innerHTML = " "
+        }
+        function displayArray(){
+           let  e = "<hr />";
+           for( let i = 0 ; i < array.length ; i++){
+           e += "Element : " + i + "=" + array[i] + "<br />" ;
+        }
+        document.getElementById("result").innerHTML = e ;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+
+<body>
+
+</body>
+<script>
+    let j = 0;
+    let tiengAnh = ["black", "blue", "yellow", "red"];
+    let tiengViet = ["den", "xanh", "vang", "do"]
+    let input = prompt("enter a word : ");
+    let indexResult = -1;
+    for (i = 0; i < tiengAnh.length; i++) {
+        if (tiengAnh[i] === input) {
+                // indexResult = i ;
+                // alert(tiengViet[indexResult]);
+                indexResult = i;
+                break;
+            }
+        }
+   
+    if (indexResult >= 0) {
+        alert(tiengViet[indexResult]);
+    } else {
+        alert("Nothing found!")
+    }
+        // let input = prompt( "enter a word : ")
+        // let index = tiengAnh.indexOf(input);
+        // if (index != -1 ){
+        //     alert(tiengViet[index]) ;
+        // } else {
+        //     alert("khong ton tai !") ;
+        // }
+
+</script>
+
+</html>

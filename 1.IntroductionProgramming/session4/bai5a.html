@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <script>
+            let number = 30 ;
+            let  count = 0 ;
+            let N = 0 ;
+            let result = " " ;
+            let tong = 0;
+            for ( N = 0 ; count <= number ; N ++  ){
+              if( sochiahetcho7(N)){
+                result += (N + " ");
+                count ++ ;
+            }
+            }
+            function sochiahetcho7(N){
+            for ( i = 0 ; i <= N ; i ++ ){
+                    if (N % 7 == 0){
+                        tong += N ;
+                        console.log(tong);
+                       
+                        return true ;
+                    }
+                  
+                    return false ;
+            }
+                }
+                document.write(result + "<br /> ");
+                document.write(tong);
+        </script>
+    </body>
+</html>

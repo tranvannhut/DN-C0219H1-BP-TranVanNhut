@@ -1,0 +1,35 @@
+<html>
+
+<body>
+    <script>
+        let engLish = ["happy", "sad" , "excited" , "disappointed"];
+        let vietNamese = ["vuive" , "buon", "hungthu" , "thatvong"];
+        let index =prompt("enter a word what you want to translate : ");
+        let b = false;
+        let  x ;
+        for (let i = 0 ; i < engLish.length ; i++){
+            if (index == engLish[i]){
+                vietNamese[x] = index ;
+                x = i ;
+                b = true ;
+               // break ;
+            }
+        }
+       
+        if (b == true ){
+            alert("vietnamese : " + vietNamese[x]);
+        }else {
+        alert("nothing find!");
+        }
+
+
+
+
+
+    //     let input = engLish.indexOf(index);
+    //    document.write(vietNamese[input]);
+
+    </script>
+</body>
+
+</html>

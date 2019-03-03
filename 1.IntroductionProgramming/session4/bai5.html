@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <script>
+            var number  = 30 ;
+            var count = 0;
+            var result = " "
+            var N = 0; 
+            var i = 0 ;
+            var tong = 0 ;
+            var sumtong = 0 ;
+        for ( N = 0 ; count <= number  ; N++){
+            if (sochiahetcho7(N)){
+                result += N + " " ;
+                count ++ 
+            }
+        }
+        function sochiahetcho7(N){
+            while ( i <= N ){
+                 while( N % 7 == 0){
+                  tong += N ;
+                  console.log(tong);
+                   i++ ;
+                    return true ;
+             }
+                 
+                return false ;
+            }
+           
+            }
+            //sumtong += tong ;
+            document.write(result + "<br />");
+            document.write("Tổng của 30 số tự nhiên đầu tiên chia hết cho 7  = " + tong);
+            </script>
+    </body>
+</html>

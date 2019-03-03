@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <script>
+            var number = Number(prompt("enter a prime number : "));
+            var count = 0 ;
+            var N = 2 ;
+            var result = "" ;
+//for ( N =2 ; N <= number ; N ++ ){
+            //     while  ( count <= number ){
+            //         if (songuyento(N)){
+            //             result += ( N + " ");
+            //             count ++ ;
+            //     }
+            //     N ++ ;
+            // }
+            
+            for ( N= 2 ; count <= number ; N++){
+                if(songuyento(N))
+                {
+                    result += ( N + " ");
+                        count ++ ;
+                }            
+            }
+            
+           /* while ( count < number ){
+            console.log(count)
+                   if(songuyento(N)){
+                      result +=  (N +  " ");  
+                      count ++ ;
+                  }
+                 N ++ ; 
+            }
+            */
+            
+            function songuyento(N){
+                for( var i = 2 ; i <= Math.sqrt(N); i ++){
+                     if (N % i == 0 ) 
+                     return false;
+                 }
+                 return true ;
+            }
+
+             document.write(result);
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <script>
+        var x = [3, 4, 6, 7, 8, 9, 2, -12, 45, 13];
+        var max = [0];
+        var index = 0;
+        var b = false;
+        for (let i = 0; i < x.length; i++) {
+            if (x[i] > max) {
+                max = x[i];
+                index = i
+                b = true;
+               
+            }
+        }
+            
+            if (b == true){
+           alert(max + " la so lon nhat trong mang va p vi tri " + index);
+            }else {
+                alert("nothing found! ") ;
+            }
+
+
+    </script>
+</body>
+
+</html>

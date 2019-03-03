@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+        //     let a = parseInt(prompt("enter a number a : "));
+        //     let b = parseInt(prompt("enter a number b : "));
+        //     let result ;
+        //    if( result = (a + b < 5 ) ? 'Below' : 'over' );
+        //     alert(result);
+        let username = prompt("please sign in : ");
+        let b = false ;
+        if(username == "Admin"){
+            b = true ;
+        }else if (username == null){
+            alert("cacnceled");
+        }else{
+            alert(" I don't know you ");
+        }
+       if ( b == true ){
+           let c = prompt("enter your password : ");
+           if(c = "TheMaster"){
+               alert("welcome");
+           }else if ( c == null ){
+               alert("canceled");
+           }else {
+               alert("wrong password");
+           }
+       }
+        </script>
+    </body>
+</html>

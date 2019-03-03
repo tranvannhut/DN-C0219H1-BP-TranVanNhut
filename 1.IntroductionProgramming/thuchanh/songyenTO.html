@@ -1,0 +1,28 @@
+<html> 
+    <body>
+        <script>
+            let number = Number(prompt("so luong so nguyen to can in ra : "));
+            let count = 0 ;
+            let i ;
+            let result = "  "
+            for ( let N = 2 ; count < number ; N ++ ){
+                if(songuyento(N)){
+                    result += ( N + " ") ;
+                    count ++ ;
+                    console.log(result);
+                }
+            }
+               
+            function songuyento(N){
+                for(i = 2 ; i <= Math.sqrt(N); i ++){
+                    if ( N % i == 0)
+                        return false ;
+                    }
+                    return true ;
+                }
+    
+                   
+            document.write(result);
+        </script>
+    </body>
+</html>

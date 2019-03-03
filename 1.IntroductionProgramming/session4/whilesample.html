@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <script>
+        //    // var total = 0
+        //     var num = parseInt(prompt("enter a number : "));
+        
+        //     while(num != 0 ){
+        //        //var num = parseInt(prompt("enter a number : "));
+        //          alert (num);
+        //         //total = total + num ;
+        //     }
+        let x =[ 3,2,4,9,24,56,23,32,47,10];
+        let y = x.sort(function (a ,b){return (a - b)}) ;
+        let result ;
+        for(let i = 0 ; i < y.length ; i++){
+            if(y[i] >= 10){
+                result = y[i]; 
+                document.write(result + " "); 
+            }
+        }
+
+        </script>
+    </body>
+</html>

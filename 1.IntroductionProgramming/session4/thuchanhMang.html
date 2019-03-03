@@ -1,0 +1,33 @@
+<html>
+
+<body>
+    <h1>Sample Screen : </h1>
+    <input type="text" name="enter an element" id="demo" />
+    <input type="button" value="Add" onclick="addElement()" />
+    <input type="button" value="Display" onclick="displayElement()" />
+    <div id="demon"></div>
+    <script>
+        let x = [];
+        let i = 0;
+        
+        function addElement() {
+            x[i] = document.getElementById("demo").value ;
+            alert(x[i]) ;
+            i++ ;
+            document.getElementById("demo").value = "" ;
+        }
+       
+       function displayElement(){
+           let e = "<hr />" ;
+           for (let n = 0 ; n < x.length ; n++){
+               e += "element" + x[n] + "<br />"
+           }
+           document.getElementById("demon").innerHTML = e ;
+       }
+    </script>
+
+
+   
+</body>
+
+</html>
