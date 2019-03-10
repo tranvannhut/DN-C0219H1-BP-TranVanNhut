@@ -1,18 +1,29 @@
 <html>
+    <body>
     <script>
-        var sothu1 = 1 ;
-        var sothu2 = 2 ;
-        var sout = " 1 2"
+        var sothu1 = 1;
+        var sothu2 = 2;
+        var sout = " 1 2 ";
+        let array = [ 1, 2 ];
         for ( i= 3 ; i<= 20 ; i++){
             sothuI = sothu1 + sothu2 ;
-            console.log("sothuI " + sothuI)
+            array.push(sothuI);
+
             sothu1 = sothu2;
-            sothu2 = sothuI ;
+            sothu2 = sothuI;
             sout  += sothuI + " ";
         }
+         let x ;
+         let sum = 0;
+        for(i = 0  ;i < array.length ; i++){ 
+          x = array[i];
+           sum = sum + array[i] ;
+        }
+        console.log(sum);
+
 document.write(sout);
     </script>
-    <body>
+    
         
     </body>
 </html>

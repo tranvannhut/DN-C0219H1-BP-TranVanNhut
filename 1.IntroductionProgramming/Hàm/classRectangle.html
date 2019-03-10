@@ -1,0 +1,38 @@
+<html>
+
+<body>
+    <canvas id="demo" height="300" width="300" style="border:1px solid#000000; "></canvas>
+    <h1>dien tich hinh chu nhat  : </h1>
+    <script>
+        function hinhChuNhat(toadoX, toadoY, chieudai, chieurong) {
+            this.X = toadoX;
+            this.Y = toadoY;
+            this.long = chieudai;
+            this.width = chieurong;
+            this.squareHCN = function () {
+                let dientichHCN = this.long * this.width;
+                return dientichHCN;
+            }
+        }
+        //  let dientich = new hinhChuNhat("10","10",50,50);
+        //         dientich.squareHCN();
+        //        console.log(dientich.squareHCN());
+
+        function createHCN() {
+            let chieuDai = prompt("enter chieu dai");
+            let chieuRong = prompt("enter chieu rong");
+            let dtHCN = new hinhChuNhat(40, 40, chieuDai, chieuRong);
+           
+            let ctx = document.getElementById("demo").getContext("2d");
+            ctx.fillStyle = "blue" ;
+            ctx.fillRect(dtHCN.X, dtHCN.Y, dtHCN.long, dtHCN.width);
+            
+           
+            document.write( dtHCN.squareHCN());
+        }
+        createHCN();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <body>
+        <script>
+            function Apple(weight){
+                this.weight = weight;
+                this.decreseApple = function(){
+                    if(this.weight > 0){
+                        this.weight--;
+                    }
+                }
+                this.isEmpty = function(){
+                     if(this.weight > 0){
+                         return true;
+                     }else{
+                         return false;
+                     }
+                }
+                this.getApple = function(){
+                    return this.weight;
+                }
+            }
+            function Human(name,gender,weight1){
+                    this.name = name;
+                    this.gender = true ;
+                    this.weight1= weight1;
+            }
+                    this.isMale = function(){
+                        if(this.gender == true){   
+                    }
+                    return this.gender;
+                    }
+                    this.setGender = function(){
+                         if(this.gender == true){
+                       alert("my name is Adam!")
+                    }else{
+                        alert("my name is Madam")
+                    }
+                    }
+
+             let xoso = new Human("adam",true,10);
+             console.log(xoso.isMale());
+             let tao = new Apple(10);
+             console.log(tao.isEmpty());
+      </script>
+    </body>
+</html>

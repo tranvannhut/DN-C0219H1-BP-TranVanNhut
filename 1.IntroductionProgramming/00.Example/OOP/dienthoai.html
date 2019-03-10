@@ -1,0 +1,54 @@
+<html>
+
+<body>
+    <script>
+        function Battery(energy) {
+            this.energy = energy;
+            this.getBattery = function () {
+                return this.energy;
+            }
+            this.decreaseBattery = function () {
+                if (this.energy > 0) {
+                    this.energy--;
+                }
+            }
+
+
+        }
+        function Mobile(status, battery) {
+            this.status = true;
+            this.battery = battery;
+            this.getLampMobile = function () {
+                return this.battery.getBattery();
+            }
+            this.decreaseLampMobile = function () {
+                return this.battery.decreaseBattery();
+            }
+            this.light = function () {
+                if (this.status) {
+                    alert("lighting!");
+                } else {
+                    alert("nothing lighting!");
+                }
+            }
+            this.turnOn = function () {
+                this.status = true;
+            }
+            this.turnOff = function () {
+                this.status = false;
+            }
+        }
+        let pin = new Battery(10)
+        alert(pin.getBattery());
+        let flashMobile = new Mobile(false, pin);
+        //  alert(flashMobile.getLampMobile());
+        document.write("Battery information :" + flashMobile.getLampMobile() + "<br />");
+        flashMobile.light();
+        document.write("turn On :");
+        flashMobile.turnOn();
+        flashMobile.light();
+        //console.log(pin.decreaseBattery());
+    </script>
+</body>
+
+</html>

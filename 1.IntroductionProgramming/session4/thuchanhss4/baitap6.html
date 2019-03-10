@@ -8,24 +8,23 @@
         let i;
         for (let i = 0; i < x.length; i++) {
             if (x[i] == num) {
-                x[i] = x[i + 1];
-                num = x[i + 1];
-
-
-                //   break ;  
+                b = true;
+                break;
             } else {
                 alert("v khong thuoc mang !")
             }
+        }
+        if (b == true) {
+            for (let i = 0; i < x.length; i++) {
+                x[i] = x[i + 1];
+            }
             x.length = x.length - 1;
             console.log(x);
-        }
-            // if(b == true){
-            //     x[i] = x [i + 1 ]
-            //     num = x[x+ 1];
 
-            //     // result = x[i]
-            //     alert(x);
-            // }
+
+            // result = x[i]
+           // alert(x);
+        }
 
     </script>
 

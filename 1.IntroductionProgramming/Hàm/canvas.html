@@ -1,0 +1,31 @@
+<html>
+    <body>
+          <canvas id="demo" width="1000" height="800" style="border:1px solid#000000;"></canvas>
+         
+          <img id="image"   width="200" height="90"  src="C:\Users\HP\Pictures\Saved Pictures\danh-ngon-khong-tu-1.jpg" >
+          <p><button onclick="clickme()" >Try It</button></p>
+<script>
+        
+        // let x = document.getElementById("demo");
+        // let ctx = x.getContext("2d");
+        // ctx.moveTo(0,0);
+        // ctx.lineTo(200,100);
+        // ctx.stroke();
+        function clickme(){
+         let img = document.getElementById("image");
+         let x = document.getElementById("demo");
+         let ctx = x.getContext("2d");
+         ctx.drawImage(img,10,10);
+        }
+        //  ctx.beginPath();
+        //  ctx.arc(100,50,50,0,2*Math.PI);
+        //  ctx.stroke();
+
+      // ctx.fillStyle = "#ff0000"
+      // ctx.fillRect(100 , 70 , 80 , 50);
+        
+        // ctx.font = "30px Arial";
+        // ctx.fillText("Hello World" , 30 , 50);
+        </script> 
+    </body>
+</html>

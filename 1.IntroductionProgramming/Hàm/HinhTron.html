@@ -1,0 +1,48 @@
+<html>
+
+<body>
+    <canvas id="demo" height="100" width="200" style="border:1px solid#000000;"></canvas>
+
+    <h1> Diện Tích Hình Tròn : </h1>
+
+    <script>
+        function Circle(toadoX, toadoY, bankinh, color) {
+            this.X = toadoX;
+            this.Y = toadoY;
+            this.radius = bankinh;
+            this.color = "color";
+            this.square = function () {
+                let dientich = Math.PI * this.radius * this.radius;
+                return dientich;
+
+            }
+        }
+        //let sqC = new circle(100,50,100);
+
+
+
+        function CreateCircle() {
+
+            let bankinhR = prompt(Math.floor(Math.random() * 70));
+            var sqC = new Circle(100, 50, bankinhR);
+            let ctx = document.getElementById("demo").getContext("2d");
+            ctx.fillStyle = "green";
+            ctx.beginPath();
+            ctx.arc(sqC.X, sqC.Y, sqC.radius, 0, 2 * Math.PI);
+            ctx.fill();
+           // ctx.fillStyle = "red";
+
+            document.write(sqC.square());
+
+        }
+
+        CreateCircle();
+        // let cilrcle = new Circle(40,50,100,"red");
+        // cilrcle.square();
+
+
+
+    </script>
+</body>
+
+</html>

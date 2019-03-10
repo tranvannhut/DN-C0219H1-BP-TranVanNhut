@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <script>
+            
+            // function person(ten,tuoi,sothich, gioiTinh){
+            //     this.name=ten;
+            //     this.age=tuoi;
+            //     this.hooby=sothich;
+            //     this.gioiTinh = gioiTinh;
+
+            //     this.move = function(){
+            //         console.log(this.name + " is  moving");
+            //     }
+            // }
+
+            // var myfriend = new person("nhut",25,"football", "nam");
+
+            // var myfriend1 = new person("thanh",20,"game");
+
+            //   myfriend.move();
+            //  console.log(myfriend.gioiTinh);
+            // document.write(myfriend.age);
+            // console.log(myfriend.age);
+            function Mouse(mausac,chatlieu,trongluong){
+                this.color = mausac;
+                this.material = chatlieu;
+                this.weight = trongluong;
+                this.move = function(){
+                    console.log("the mouse has :" + this.color  + this.weight);
+                }
+            }
+            let conchuot = new Mouse("den","nhua","0.05");
+            let conchuot1 = new Mouse();
+         conchuot.move();
+         
+            document.write(conchuot.color);
+
+        </script>
+    </body>
+</html>

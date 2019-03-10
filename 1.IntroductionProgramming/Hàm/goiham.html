@@ -1,0 +1,33 @@
+<html>
+
+<body>
+  <script>
+
+    var number = prompt("nhap so luong so nguyen to: ");
+
+    var primes = [];
+    var N = 2;
+    while (primes.length < number) {
+      var isPrimeNumber = isPrime(N);
+      if (isPrimeNumber) {
+        primes.push(N);
+      }
+      N++;
+
+    }//end while 
+    alert("result: " + primes);
+    function isPrime(number) {
+      var isPrime = true;
+      for (var i = 2; i <= Math.sqrt(N); i++) {
+        if (N % i == 0) {
+          isPrime = false;
+          break;
+        }
+
+      }//end for
+      return isPrime;
+    }
+  </script>
+</body>
+
+</html>

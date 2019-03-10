@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script> 
+        function  soNguyenTo(number){
+            if(number < 2 ){
+                return false;
+            }
+            for(let i = 2 ; i <= Math.sqrt(number); i++ ){
+                if(number % i == 0 ){
+                    return false;
+                }
+            }
+            return true;
+        }
+            soNguyenTo();
+            let n = prompt("enter a number : ");
+            if(soNguyenTo(n)){
+                alert("la so nguyen to");
+            }else{
+                alert("khong phai la so nguyen to");
+            }
+
+            </script>
+    </body>
+</html>
